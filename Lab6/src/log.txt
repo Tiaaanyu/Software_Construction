@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+n:4, h:20, t:3, k:3, N:20, MV:30
+time: 1, name: 2, ladder: ladder 1, direction: L->R, speed: 9, location: 9, strategy: Same direction ladder.
+time: 1, name: 3, ladder: ladder 0, direction: R->L, speed: 10, location: 9, strategy: Wait for the empty ladder.
+time: 1, name: 1, ladder: ladder 2, direction: L->R, speed: 13, location: 13, strategy: Wait for the empty ladder.
+name: 3, direction: R->L, spend time: 2, strategy: Wait for the empty ladder.
+time: 2, name: 2, ladder: ladder 1, direction: L->R, speed: 9, location: 18, strategy: Same direction ladder.
+name: 1, direction: L->R, spend time: 2, strategy: Wait for the empty ladder.
+name: 2, direction: L->R, spend time: 3, strategy: Same direction ladder.
+name: 4, direction: R->L, spend time: 1, strategy: Wait for the empty ladder.
+name: 5, direction: L->R, spend time: 1, strategy: Wait for the empty ladder.
+name: 6, direction: R->L, spend time: 1, strategy: Wait for the empty ladder.
+time: 1, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 1, strategy: Wait for the empty ladder.
+name: 9, direction: L->R, spend time: 1, strategy: Same direction ladder.
+time: 1, name: 7, ladder: ladder 2, direction: L->R, speed: 11, location: 11, strategy: Same direction and least monkeys ladder.
+time: 2, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 2, strategy: Wait for the empty ladder.
+name: 7, direction: L->R, spend time: 2, strategy: Same direction and least monkeys ladder.
+time: 3, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 3, strategy: Wait for the empty ladder.
+name: 10, direction: L->R, spend time: 1, strategy: Same direction ladder.
+time: 1, name: 11, ladder: ladder 2, direction: R->L, speed: 14, location: 5, strategy: Same direction ladder.
+time: 1, name: 12, ladder: ladder 3, direction: R->L, speed: 10, location: 9, strategy: Same direction and least monkeys ladder.
+time: 4, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 4, strategy: Wait for the empty ladder.
+name: 11, direction: R->L, spend time: 2, strategy: Same direction ladder.
+name: 12, direction: R->L, spend time: 2, strategy: Same direction and least monkeys ladder.
+time: 5, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 5, strategy: Wait for the empty ladder.
+time: 6, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 6, strategy: Wait for the empty ladder.
+time: 1, name: 13, ladder: ladder 1, direction: R->L, speed: 14, location: 5, strategy: Wait for the empty ladder.
+name: 14, direction: L->R, spend time: 1, strategy: Wait for the empty ladder.
+name: 15, direction: L->R, spend time: 1, strategy: Wait for the empty ladder.
+time: 7, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 7, strategy: Wait for the empty ladder.
+name: 13, direction: R->L, spend time: 2, strategy: Wait for the empty ladder.
+time: 8, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 8, strategy: Wait for the empty ladder.
+time: 9, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 9, strategy: Wait for the empty ladder.
+time: 1, name: 16, ladder: ladder 1, direction: L->R, speed: 17, location: 17, strategy: Same direction and least monkeys ladder.
+name: 18, direction: R->L, spend time: 1, strategy: Same direction and least monkeys ladder.
+time: 1, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 1, strategy: Wait for the empty ladder.
+time: 10, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 10, strategy: Wait for the empty ladder.
+name: 16, direction: L->R, spend time: 2, strategy: Same direction and least monkeys ladder.
+time: 2, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 2, strategy: Wait for the empty ladder.
+time: 11, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 11, strategy: Wait for the empty ladder.
+time: 3, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 3, strategy: Wait for the empty ladder.
+time: 12, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 12, strategy: Wait for the empty ladder.
+total time: 18.0
+Throughput rate: 1.1111111111111112
+fairness: 0.031578947368421054
+time: 1, name: 19, ladder: ladder 1, direction: L->R, speed: 3, location: 3, strategy: Same direction and least monkeys ladder.
+time: 1, name: 20, ladder: ladder 3, direction: L->R, speed: 17, location: 17, strategy: Wait for the empty ladder.
+time: 4, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 4, strategy: Wait for the empty ladder.
+time: 13, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 13, strategy: Wait for the empty ladder.
+time: 2, name: 19, ladder: ladder 1, direction: L->R, speed: 3, location: 6, strategy: Same direction and least monkeys ladder.
+name: 20, direction: L->R, spend time: 2, strategy: Wait for the empty ladder.
+time: 5, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 5, strategy: Wait for the empty ladder.
+time: 14, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 14, strategy: Wait for the empty ladder.
+time: 3, name: 19, ladder: ladder 1, direction: L->R, speed: 3, location: 9, strategy: Same direction and least monkeys ladder.
+time: 6, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 6, strategy: Wait for the empty ladder.
+time: 15, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 15, strategy: Wait for the empty ladder.
+time: 4, name: 19, ladder: ladder 1, direction: L->R, speed: 3, location: 12, strategy: Same direction and least monkeys ladder.
+time: 7, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 7, strategy: Wait for the empty ladder.
+time: 16, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 16, strategy: Wait for the empty ladder.
+time: 5, name: 19, ladder: ladder 1, direction: L->R, speed: 3, location: 15, strategy: Same direction and least monkeys ladder.
+time: 8, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 8, strategy: Wait for the empty ladder.
+time: 17, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 17, strategy: Wait for the empty ladder.
+time: 6, name: 19, ladder: ladder 1, direction: L->R, speed: 3, location: 18, strategy: Same direction and least monkeys ladder.
+time: 9, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 9, strategy: Wait for the empty ladder.
+time: 18, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 18, strategy: Wait for the empty ladder.
+name: 19, direction: L->R, spend time: 7, strategy: Same direction and least monkeys ladder.
+time: 10, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 10, strategy: Wait for the empty ladder.
+time: 19, name: 8, ladder: ladder 0, direction: L->R, speed: 1, location: 19, strategy: Wait for the empty ladder.
+time: 11, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 11, strategy: Wait for the empty ladder.
+name: 8, direction: L->R, spend time: 20, strategy: Wait for the empty ladder.
+time: 12, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 12, strategy: Wait for the empty ladder.
+time: 13, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 13, strategy: Wait for the empty ladder.
+time: 14, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 14, strategy: Wait for the empty ladder.
+time: 15, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 15, strategy: Wait for the empty ladder.
+time: 16, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 16, strategy: Wait for the empty ladder.
+time: 17, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 17, strategy: Wait for the empty ladder.
+time: 18, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 18, strategy: Wait for the empty ladder.
+time: 19, name: 17, ladder: ladder 2, direction: L->R, speed: 1, location: 19, strategy: Wait for the empty ladder.
+name: 17, direction: L->R, spend time: 20, strategy: Wait for the empty ladder.

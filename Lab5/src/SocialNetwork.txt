@@ -1,0 +1,12 @@
+GraphType=SocialNetwork
+GraphName=MySocialNetwork
+VertexType=Person
+Vertex=<Wang,Person,<M,56>>
+Vertex=<Li,Person,<F,23>>
+Vertex=<Liu,Person,<M,18>>
+Vertex=<Zhao,Person,<F,22>>
+EdgeType=ForwardConnection,CommentConnection,FriendConnection
+Edge=<LiForwardLiu,ForwardConnection,1,Li,Liu,Yes>
+Edge=<ZhaoForwardLiu,ForwardConnection,0.5,Zhao,Liu,Yes>
+Edge=<WangCommentZhao,CommentConnection,0.3,Wang,Zhao,Yes>
+Edge=<LiFriendLiu,FriendConnection,0.8,Li,Liu,Yes>

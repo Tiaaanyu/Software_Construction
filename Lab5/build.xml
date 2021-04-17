@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Lab5_1160301008">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/java-oxygen/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+    </path>
+    <path id="Lab5_1160301008.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="../../下载/jung2-2_0_1/collections-generic-4.01.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/colt-1.2.0.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/concurrent-1.3.4.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/j3d-core-1.3.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-3d-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-3d-demos-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-algorithms-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-api-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-graph-impl-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-io-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-jai-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-jai-samples-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-samples-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/jung-visualization-2.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/stax-api-1.0.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/vecmath-1.3.1.jar"/>
+        <pathelement location="../../下载/jung2-2_0_1/wstx-asl-3.2.6.jar"/>
+        <pathelement location="../../下载/jfreechart-1.0.19/jfreechart-1.0.19-demo.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="test">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="test"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="SocialNetworkTest (2)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="SocialNetworkTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </junit>
+    </target>
+    <target name="NetworkTopologyApp">
+        <java classname="application.NetworkTopologyApp" failonerror="true" fork="yes">
+            <jvmarg line="-verbose:gc&#10;-Xloggc:src/log.log&#10;-XX:+PrintGCDetails &#13;&#10;-XX:+PrintGCDateStamps &#13;&#10;-XX:+PrintGCTimeStamps"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="MovieGraphFactory">
+        <java classname="factory.MovieGraphFactory" failonerror="true" fork="yes">
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="NetworkTopologyFactory">
+        <java classname="factory.NetworkTopologyFactory" failonerror="true" fork="yes">
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="ConcreteGraphTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="ConcreteGraphTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </junit>
+    </target>
+    <target name="SocialNetworkFactory">
+        <java classname="factory.SocialNetworkFactory" failonerror="true" fork="yes">
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="GraphPoetApp">
+        <java classname="application.GraphPoetApp" failonerror="true" fork="yes">
+            <jvmarg line="-verbose:gc"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="SocialNetworkApp">
+        <java classname="application.SocialNetworkApp" failonerror="true" fork="yes">
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="MovieGraphTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="MovieGraphTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </junit>
+    </target>
+    <target name="MovieGraphApp">
+        <java classname="application.MovieGraphApp" failonerror="true" fork="yes">
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="GraphPoetTest (2)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="GraphPoetTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </junit>
+    </target>
+    <target name="GraphMetrics">
+        <java classname="helper.GraphMetrics" failonerror="true" fork="yes">
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="NetworkTopologyTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="NetworkTopologyTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </junit>
+    </target>
+    <target name="GraphPoetFactory">
+        <java classname="factory.GraphPoetFactory" failonerror="true" fork="yes">
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="BarChart">
+        <java classname="IOStrategy.BarChart" failonerror="true" fork="yes">
+            <arg line="-verbose:gc"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </java>
+    </target>
+    <target name="GraphTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="GraphTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab5_1160301008.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

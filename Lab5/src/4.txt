@@ -1,0 +1,17 @@
+GraphType=GraphPoet
+GraphName=LabPoet
+
+VertexType=Word
+Vertex=<Word1,Word>
+Vertex=<Word2,Word>
+Vertex=<Word3,Word>
+Vertex=<Word4,Word>
+Vertex=<Word5,Word>
+Vertex=<Word6,Word>
+Vertex=<Word7,Word>
+Vertex=<Word8,Word>
+Vertex=<Word9,Word>
+Vertex=<Word10,Word>
+Vertex=<Word11,Word>
+Vertex=<Word12,Word>
+Vertex=<Word13,Word>

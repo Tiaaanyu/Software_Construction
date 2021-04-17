@@ -1,0 +1,124 @@
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse GraphType=GraphPoet
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse VertexType is Word
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse Add vertex: a
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse Add vertex: b
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse Add vertex: c
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse Add vertex: d
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse EdgeType is WordNeighborhood
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse Add edge: ab, which contains vertices: a, b, and the weight is 1
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse Add edge: ac, which contains vertices: a, c, and the weight is 1
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse Add edge: bd, which contains vertices: b, d, and the weight is 1
+2018.05.20.20:01:30 INFO factory.GraphPoetFactory parse Add edge: cd, which contains vertices: c, d, and the weight is 1
+2018.05.20.20:01:39 INFO factory.GraphPoetFactory parse GraphType=GraphPoet
+2018.05.20.20:01:39 INFO factory.GraphPoetFactory parse GraphName is MyGraphPoet
+2018.05.20.20:01:39 INFO factory.GraphPoetFactory parse VertexType is Word
+2018.05.20.20:01:39 INFO factory.GraphPoetFactory parse Add vertex: a
+2018.05.20.20:01:39 INFO factory.GraphPoetFactory parse Add vertex: b
+2018.05.20.20:01:39 INFO factory.GraphPoetFactory parse Add vertex: c
+2018.05.20.20:01:39 INFO factory.GraphPoetFactory parse Add vertex: d
+2018.05.20.20:01:39 INFO factory.GraphPoetFactory parse EdgeType is WordNeighborhood
+2018.05.20.20:01:39 ERROR factory.GraphPoetFactory createGraph YorNException: Please use 'Yes'('No') instead of 'Y'('N'), then change an input file.
+2018.05.20.20:01:50 INFO factory.GraphPoetFactory parse GraphType=GraphPoet
+2018.05.20.20:01:50 INFO factory.GraphPoetFactory parse VertexType is Word
+2018.05.20.20:01:50 INFO factory.GraphPoetFactory parse Add vertex: a
+2018.05.20.20:01:50 INFO factory.GraphPoetFactory parse Add vertex: b
+2018.05.20.20:01:50 INFO factory.GraphPoetFactory parse Add vertex: c
+2018.05.20.20:01:50 INFO factory.GraphPoetFactory parse Add vertex: d
+2018.05.20.20:01:50 INFO factory.GraphPoetFactory parse EdgeType is WordNeighborhood
+2018.05.20.20:01:50 ERROR factory.GraphPoetFactory createGraph NoWeightException: There's no weight for some edges, please change an input file.
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse GraphType=MovieGraph
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse GraphName is MyFavoriteMovies
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse VertexType are Movie, Actor, Director.
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add movie: TheShawshankRedemption
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add movie: TheShawshankRedemption2
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add director: FrankDarabont
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add actor: MorganFreeman
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add actor: TimRobbins
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add movie: TheGreenMile
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add actor: TomHanks
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse EdgeType are MovieActorRelation, MovieDirectorRelation, SameMovieHyperEdge.
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add edge, MovieActorRelation, SRFD
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add edge, MovieActorRelation, GMFD
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add edge, MovieActorRelation, SRMF
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add edge, MovieActorRelation, SRTR
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add edge, MovieActorRelation, GMTH
+2018.05.20.20:02:29 INFO factory.MovieGraphFactory parse Add HyperEdge, ActorsInSR
+2018.05.20.20:02:52 INFO factory.NetworkTopologyFactory parse GraphType=NetworkTopology
+2018.05.20.20:02:52 INFO factory.NetworkTopologyFactory parse GraphName is LabNetwork
+2018.05.20.20:02:52 INFO factory.NetworkTopologyFactory parse VertexType are Computer, Router, Server, Server.
+2018.05.20.20:02:52 INFO factory.NetworkTopologyFactory parse Add vertex, Server: Server1
+2018.05.20.20:02:52 INFO factory.NetworkTopologyFactory parse Add vertex, Router: Router1
+2018.05.20.20:02:52 INFO factory.NetworkTopologyFactory parse Add vertex, Computer: Computer1
+2018.05.20.20:02:52 INFO factory.NetworkTopologyFactory parse EdgeType is NetworkConnection
+2018.05.20.20:02:52 ERROR factory.NetworkTopologyFactory createGraph NoVertexException, The edge contains vertex not in the graph, Please change an input file.
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse GraphType=SocialNetwork
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse GraphName is MySocialNetwork
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse VertexType is Person
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse Add vertex, Person: Wang
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse Add vertex, Person: Li
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse Add vertex, Person: Liu
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse Add vertex, Person: Zhao
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse EdgeType are ForwardConnection, CommentConnection, FriendConnection.
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse Add edge, ForwardConnection: LiForwardLiu
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse Add edge, ForwardConnection: ZhaoForwardLiu
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse Add edge, CommentConnection: WangCommentZhao
+2018.05.20.20:03:20 INFO factory.SocialNetworkFactory parse Add edge, FriendConnection: LiFriendLiu
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse GraphType=GraphPoet
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse VertexType is Word
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse Addvertex: a
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse Addvertex: b
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse Addvertex: c
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse Addvertex: d
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse EdgeType is WordNeighborhood
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse Addedge: ab, which contains vertices: a, b, and the weight is 1
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse Addedge: ac, which contains vertices: a, c, and the weight is 1
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse Addedge: bd, which contains vertices: b, d, and the weight is 1
+2018.05.20.20:48:59 INFO factory.GraphPoetFactory parse Addedge: cd, which contains vertices: c, d, and the weight is 1
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse GraphType=MovieGraph
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse GraphName is MyFavoriteMovies
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse VertexType are Movie, Actor, Director.
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addmovie: TheShawshankRedemption
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addmovie: TheShawshankRedemption2
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Adddirector: FrankDarabont
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addactor: MorganFreeman
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addactor: TimRobbins
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addmovie: TheGreenMile
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addactor: TomHanks
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse EdgeType are MovieActorRelation, MovieDirectorRelation, SameMovieHyperEdge.
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addedge, MovieActorRelation, SRFD
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addedge, MovieActorRelation, GMFD
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addedge, MovieActorRelation, SRMF
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addedge, MovieActorRelation, SRTR
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse Addedge, MovieActorRelation, GMTH
+2018.05.20.20:49:20 INFO factory.MovieGraphFactory parse AddHyperEdge, ActorsInSR
+2018.05.20.20:49:48 INFO factory.NetworkTopologyFactory parse GraphType=NetworkTopology
+2018.05.20.20:49:48 INFO factory.NetworkTopologyFactory parse GraphName is LabNetwork
+2018.05.20.20:49:48 INFO factory.NetworkTopologyFactory parse VertexType are Computer, Router, Server, Server.
+2018.05.20.20:49:48 INFO factory.NetworkTopologyFactory parse Addvertex, Server: Server1
+2018.05.20.20:49:48 INFO factory.NetworkTopologyFactory parse Addvertex, Router: Router1
+2018.05.20.20:49:48 INFO factory.NetworkTopologyFactory parse Addvertex, Computer: Computer1
+2018.05.20.20:49:48 INFO factory.NetworkTopologyFactory parse EdgeType is NetworkConnection
+2018.05.20.20:49:48 ERROR factory.NetworkTopologyFactory createGraph NoVertexException, The edge contains vertex not in the graph, Please change an input file.
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse GraphType=SocialNetwork
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse GraphName is MySocialNetwork
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse VertexType is Person
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse Addvertex, Person: Wang
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse Addvertex, Person: Li
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse Addvertex, Person: Liu
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse Addvertex, Person: Zhao
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse EdgeType are ForwardConnection, CommentConnection, FriendConnection.
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse Addedge, ForwardConnection: LiForwardLiu
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse Addedge, ForwardConnection: ZhaoForwardLiu
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse Addedge, CommentConnection: WangCommentZhao
+2018.05.20.20:50:08 INFO factory.SocialNetworkFactory parse Addedge, FriendConnection: LiFriendLiu
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse GraphType=GraphPoet
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse VertexType is Word
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse Addvertex: a
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse Addvertex: b
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse Addvertex: c
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse Addvertex: d
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse EdgeType is WordNeighborhood
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse Addedge: ab, which contains vertices: a, b, and the weight is 1
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse Addedge: ac, which contains vertices: a, c, and the weight is 1
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse Addedge: bd, which contains vertices: b, d, and the weight is 1
+2018.05.20.20:50:31 INFO factory.GraphPoetFactory parse Addedge: cd, which contains vertices: c, d, and the weight is 1

@@ -1,0 +1,11 @@
+GraphType=GraphPoet
+VertexType=Word
+Vertex=<a,Word>
+Vertex=<b,Word>
+Vertex=<c,Word>
+Vertex=<!d,Word>
+EdgeType=WordNeighborhood
+Edge=<ab,WordNeighborhood,1,a,b,Yes>
+Edge=<ac,WordNeighborhood,1,a,c,Yes>
+Edge=<bd,WordNeighborhood,1,b,d,Yes>
+Edge=<cd,WordNeighborhood,1,c,d,Yes>
